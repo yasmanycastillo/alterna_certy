@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="allow_change_pricelist_payment_term" model="res.groups">
+		<field name="name">Modificar tarifa/plazo de pago</field>
+	</record>
+</odoo>
