@@ -10,7 +10,7 @@ class ProductProduct(models.Model):
         args = args or []
         domain = []
         if name:
-            domain = ["|", ("name", operator, name), ("description_sale", operator, name), ("default_code", operator, name)]
+            domain = ["|", "|", ("name", operator, name), ("description_sale", operator, name), ("default_code", operator, name)]
         product_ids = self._search(expression.AND([domain, args]), limit=limit, access_rights_uid=name_get_uid)
         if product_ids:
             return product_ids
